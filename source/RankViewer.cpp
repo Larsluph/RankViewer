@@ -457,7 +457,7 @@ void RankViewer::RenderImGui()
     if (fontBig) {
         float defaultFontSize = 35 * xPercent;
         ImGui::PushFont(fontBig);
-        drawList->AddText(fontBig, defaultFontSize, ImVec2(xPercent * (centerPoint.x - 155), yPercent * (centerPoint.y - 40)), ImU32(darkBlue), to_string((int)(round(userMMR))).c_str());
+        drawList->AddText(fontBig, defaultFontSize, ImVec2(xPercent * (centerPoint.x - 155), yPercent * (centerPoint.y - 40)), ImU32(darkBlue), to_string((int)userMMR).c_str());
         ImGui::PopFont();
 
         defaultFontSize = 25 * xPercent;
